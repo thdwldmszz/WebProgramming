@@ -1,0 +1,240 @@
+html{
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.imageBox{
+  grid-column: 1/2;
+}
+
+#barImage{
+  width: 100%;
+  height: 100vh;
+}
+
+.loginBox{
+  grid-column: 2/3;
+  color: white;
+  width: 400px;
+  margin-left: 25%;
+}
+
+.main{
+  display: grid;
+  color: black;
+  background-color: white;
+  grid-template-columns: repeat(2,1fr);
+}
+
+#pageTitle{
+  font-size: 20px;
+  align-self: center;
+}
+
+.loginManager{
+  display: flex;
+  background-color: #242429;
+  flex-direction: column;
+  padding: 0px;
+  line-height: 15px;
+  margin-top: 40%;
+  border-radius: 5px;
+}
+
+.loginCustomer{
+  display: flex;
+  background-color: #242429;
+  flex-direction: column;
+  padding: 0px;
+  line-height: 15px;
+  margin-top: 40%;
+  border-radius: 5px;
+}
+
+#btnChangeM{
+  font-size: 10px;
+  width:105px;
+  padding: 3px;
+  margin: 0px;
+  align-self: flex-end;
+  margin-right: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#btnChangeC{
+  font-size: 10px;
+  width:100px;
+  padding: 3px;
+  margin: 0px;
+  align-self: flex-end;
+  margin-right: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.loginForm{
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.loginForm p{
+  padding-top: 5px;
+  margin-bottom: 3px;
+}
+
+#loginId, #loginPass, #loginReg{
+  border: white solid 1px;
+  padding-right: 5px;
+  width: 350px;
+  height: 30px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.loginForm input::placeholder{
+  color: grey;
+  font-size: 12px;
+}
+
+.loginForm input, .signupForm input{
+  width: 320px;
+  height: 25px;
+  background-color: inherit;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+#btnLogin, #btnSignup{
+  margin-top: 20px;
+  width: 100px;
+  align-self: center;
+  height: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: #2F5582;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+#btnCreate, #btnGot{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  width: 220px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+#btnCreate:hover, #btnGot:hover{
+  color: blue;
+}
+
+#btnCreate:link, #btnGot:link{
+  color: green;
+}
+
+.signup{
+  display: block;
+  padding: 0px;
+  line-height: 15px;
+  padding-top: 10px;
+  background-color: #242429;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+
+#pageTitle2{
+  font-size: 20px;
+  text-align: center;
+}
+
+.signupForm{
+  padding: 0px;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.signupForm input::placeholder{
+  color: grey;
+  font-size: 12px;
+}
+
+.container{
+  border: white solid 1px;
+  padding-right: 5px;
+  width: 350px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.signup p{
+  font-size: 10px;
+}
+
+input[type="radio"]{
+  margin-bottom: 15px;
+  height: 12px;
+  margin-right: 0px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+
+label{
+  font-size: 12px;
+}
+
+.popUp, .popUp2{
+  display: none;
+  font-size: 10px;
+  position:absolute;
+  left: 97%;
+  width: 250px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-left: 5px;
+  margin-top: 2px;
+  border-radius: 3px;
+}
+
+.popUpText{
+  background-color: #2F5582;
+  border-radius: 3px;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.divicon{
+  display: none;
+  color: green;
+}
+
+#btnSignup{
+  margin-left: 35%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#btnGot{
+  margin-left: 30%;
+}
