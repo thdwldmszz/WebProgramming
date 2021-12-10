@@ -1,0 +1,216 @@
+/*css for seller, addItem*/
+
+html{
+  font-family: sans-serif;
+}
+
+body{
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-rows: 10vh auto 10vh;
+}
+
+.top-menu{
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+}
+
+
+.top-menu a{
+  align-self: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.top-menu a:link{
+  color: black;
+}
+
+.top-menu a:hover{
+  color: black;
+}
+
+.top-menu a:visited{
+  color: black;
+}
+
+#logoutM{
+  color: white;
+  background-color: #b21848;
+  border: grey solid 1px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.itemContainer{
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 600px;
+  height: 350px;
+  left: 50%;
+  top: 20%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  border-radius: 5px;
+  border: solid 1px black;
+}
+
+.imageBox{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  border: grey dotted 1px;
+  border-radius: 5px;
+  height: 220px;
+  width: 175px;
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.imageBox input {
+  display:none;
+}
+
+.imageBox label {
+  display:block;
+  width:100%;
+  height:100%;
+  text-align:center;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+#imageIcon{
+  font-size: 50px;
+
+  margin-bottom: 10px;
+}
+
+.imageBox img {
+  height: 220px;
+  width: 175px;
+  display:none;
+}
+
+.textBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.textBox input{
+  width: 300px;
+  height: 35px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.textBox input:first-child{
+  margin-top: 48px;
+}
+
+#saveBtn{
+  width: 80px;
+  height: 40px;
+  align-self: flex-end;
+  margin-top: 5px;
+  margin-right: 30px;
+  background-color: #1970fb;
+  border-radius: 5px;
+  border: solid 1px;
+  color: white;
+  font-size: 15px;
+}
+
+.copyright{
+  font-size: 20px;
+  grid-row: 3/4;
+  background-color: #b21848;
+  color: white;
+  text-align: center;
+  padding-top: 2px;
+  height: 10vh;
+}
+
+.home{
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  background-color: #D35400;
+}
+
+.home img{
+  height: 80vh;
+}
+
+.hometext{
+  background-color: #D35400;
+  color: white;
+  padding-left: 5vw;
+  padding-top: 25vh;
+}
+
+.listBox{
+  grid-row: 2/3;
+}
+
+#customerTable{
+  border-radius: 3px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: black;
+}
+
+#customerTable th{
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border: none;
+  font-weight: 900;
+}
+
+#customerTable thead{
+  font-size: 15px;
+  background-color: darkgrey;
+  font-weight: 600;
+  border: none;
+}
+
+#customerTable tbody{
+  font-size: 12px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+
+#customerTable tbody tr:nth-child(2n){
+  background-color: lightgrey;
+}
+
+#customerTable td, #customerTable th{
+  width: 100px;
+  text-align: center;
+  height: 20px;
+}
+
+.swal-button--confirm {
+background-color: black;
+}
