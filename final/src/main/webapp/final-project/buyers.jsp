@@ -237,17 +237,9 @@
       <div style="grid-row:1/2;grid-column:1/2;">
         <p style="font-size:30px;margin-bottom:5vh;">Way to come</p>
       </div>
-      <div style="grid-row:2/3;grid-column:1/2;"id="daumRoughmapContainer1637852956660" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-      <script charset="UTF-8">
-      	new daum.roughmap.Lander({
-      		"timestamp" : "1637852956660",
-      		"key" : "2882z",
-      		"mapWidth" : "35vw",
-      		"mapHeight" : "auto"
-      	}).render();
-      </script>
+    <div style="grid-row:2/3;grid-column:1/2;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.0502918040506!2d126.97322935109307!3d37.293941879750875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b42b61ce1867f%3A0xb38e2754eb2dbb08!2z7ISx6reg6rSA64yA7ZWZ6rWQIOyekOyXsOqzvO2Vmey6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1639216661061!5m2!1sko!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <div class="contact-message">
         <p style="font-size:30px;margin-bottom:2vh;">Contact Us</p>
         <p style="font-size:15px;margin-bottom:1vh;">Telephone: 031-0000-0000</p>
