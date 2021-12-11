@@ -48,13 +48,13 @@
     <div>
       <h1 style="font-size:30px; margin:5vh;">Drinks</h1>
       <div class="product-title">
-        <button type="button" name="button">Whisky</button>
-        <button type="button" name="button">Gin</button>
-        <button type="button" name="button">Rum</button>
-        <button type="button" name="button">Brandy</button>
-        <button type="button" name="button">Tequila</button>
-        <button type="button" name="button">Whine</button>
-        <button type="button" name="button">Beer</button>
+        <button id="whisky" type="button" name="button">Whisky</button>
+        <button id="gin" type="button" name="button">Gin</button>
+        <button id="rum" type="button" name="button">Rum</button>
+        <button id="brandy" type="button" name="button">Brandy</button>
+        <button id="tequila" type="button" name="button">Tequila</button>
+        <button id="wine" type="button" name="button">Wine</button>
+        <button id="beer" type="button" name="button">Beer</button>
       </div>
       <div class="whisky">       
  <%
@@ -74,8 +74,131 @@
  <%
   }
  %>
-
       </div>
+	    <div class="gin">       
+ <%
+   for(int i=0;i<gin.size();i++){
+	   List drink=(List)gin.get(i);
+ %>
+  <ul class="item"><center>
+          <li >
+            <img class="drink" onclick="getsrc(this)" src=<%=drink.get(0) %>>
+          </li>
+          <li >
+            <p ><%=drink.get(1) %></p>
+            <p ><%=drink.get(2) %></p>
+            <p style="color:#D35400;font-weight:bold;"><%=drink.get(3) %>won</p>
+          </li></center>
+        </ul>
+ <%
+  }
+ %>
+      </div>
+      <%-- 설명 --%>
+      
+      <div class="tequila">       
+ <%
+   for(int i=0;i<tequila.size();i++){
+	   List drink=(List)tequila.get(i);
+ %>
+  <ul class="item"><center>
+          <li >
+            <img class="drink" onclick="getsrc(this)" src=<%=drink.get(0) %>>
+          </li>
+          <li >
+            <p ><%=drink.get(1) %></p>
+            <p ><%=drink.get(2) %></p>
+            <p style="color:#D35400;font-weight:bold;"><%=drink.get(3) %>won</p>
+          </li></center>
+        </ul>
+ <%
+  }
+ %>
+      </div>
+      <%-- 설명 --%>
+      
+      <div class="rum">       
+ <%
+   for(int i=0;i<rum.size();i++){
+	   List drink=(List)rum.get(i);
+ %>
+  <ul class="item"><center>
+          <li >
+            <img class="drink" onclick="getsrc(this)" src=<%=drink.get(0) %>>
+          </li>
+          <li >
+            <p ><%=drink.get(1) %></p>
+            <p ><%=drink.get(2) %></p>
+            <p style="color:#D35400;font-weight:bold;"><%=drink.get(3) %>won</p>
+          </li></center>
+        </ul>
+ <%
+  }
+ %>
+      </div>
+      <%-- 설명 --%>
+      
+      <div class="brandy">       
+ <%
+   for(int i=0;i<brandy.size();i++){
+	   List drink=(List)brandy.get(i);
+ %>
+  <ul class="item"><center>
+          <li >
+            <img class="drink" onclick="getsrc(this)" src=<%=drink.get(0) %>>
+          </li>
+          <li >
+            <p ><%=drink.get(1) %></p>
+            <p ><%=drink.get(2) %></p>
+            <p style="color:#D35400;font-weight:bold;"><%=drink.get(3) %>won</p>
+          </li></center>
+        </ul>
+ <%
+  }
+ %>
+      </div>
+      <%-- 설명 --%>
+      
+      <div class="wine">       
+ <%
+   for(int i=0;i<wine.size();i++){
+	   List drink=(List)wine.get(i);
+ %>
+  <ul class="item"><center>
+          <li >
+            <img class="drink" onclick="getsrc(this)" src=<%=drink.get(0) %>>
+          </li>
+          <li >
+            <p ><%=drink.get(1) %></p>
+            <p ><%=drink.get(2) %></p>
+            <p style="color:#D35400;font-weight:bold;"><%=drink.get(3) %>won</p>
+          </li></center>
+        </ul>
+ <%
+  }
+ %>
+      </div>
+      <%-- 설명 --%>
+      
+      <div class="beer">       
+ <%
+   for(int i=0;i<beer.size();i++){
+	   List drink=(List)beer.get(i);
+ %>
+  <ul class="item"><center>
+          <li >
+            <img class="drink" onclick="getsrc(this)" src=<%=drink.get(0) %>>
+          </li>
+          <li >
+            <p ><%=drink.get(1) %></p>
+            <p ><%=drink.get(2) %></p>
+            <p style="color:#D35400;font-weight:bold;"><%=drink.get(3) %>won</p>
+          </li></center>
+        </ul>
+ <%
+  }
+ %>
+      </div> 	    
     </div>
   </div>
 
@@ -91,57 +214,21 @@
     </div>
     <div class="ordered-list">
       <h2>Ordered list</h2>
-      <table>
+      <table id="mycart">
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Product image</th>
-            <th>Product Name</th>
-            <th>Category1</th>
+            <th>Product image</th>            
+            <th>Category</th>
+	    <th>Product Name</th>
             <th>Price</th>
-            <th>Quantity</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>date</td>
-            
-          </tr>
-
-
+        <tbody class="mylist">
+         
         </tbody>
 
       </table>
-
     </div>
-  </div>
-
-  <div class="mycart">
-    <div class="mycart-title">
-      <p><i class="fas fa-shopping-cart" style="font-size:40px;margin-right:20px;"></i>My Cart</p>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Product image</th>
-          <th>Product Name</th>
-          <th>Category1</th>
-          <th>Category2</th>
-          <th>Price</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="http://liquorstore21.co.kr/data/file/product1/thumb-3076872730_wmPj7Zo4_93c26400a634f3a4dc447e1770485ef8d54f2452_178x183.png"></td>
-          
-        </tr>
-
-
-      </tbody>
-
-    </table>
-
   </div>
 
   <div class="contactus">
@@ -177,5 +264,156 @@
   <div class="copyright">
     <p>Copyright@2021 WoojinKim&JieunSong</p>
   </div>
+	
+<script type="text/javascript">
+let drinklist=[];
+
+function getsrc(el){ //get src when we click image
+	var imgsrc=el.src;
+	var num=0;
+	
+	for(var i=0;i<drinklist.length;i++){
+		if(drinklist[i]==imgsrc){
+			num=1;
+		}		
+	}
+	if(num==0){
+	drinklist.push(imgsrc)
+	};
+	console.log(drinklist);
+}
+	var mycart=[];
+	var whiskylist='<%=whisky%>';
+	var ginlist='<%=gin%>';
+	var tequilalist='<%=tequila%>';
+	var brandylist='<%=brandy%>';
+	var winelist='<%=wine%>';
+	var beerlist='<%=beer%>';
+	var rumlist='<%=rum%>';
+	var src;
+	
+	for(var i=0;i<whiskylist.length;i++){
+		if(whiskylist[i]!='['&& whiskylist[i]!=']'&&whiskylist[i]!=' '){
+			if(whiskylist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=whiskylist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	for(var i=0;i<ginlist.length;i++){
+		if(ginlist[i]!='['&& ginlist[i]!=']'&&ginlist[i]!=' '){
+			if(ginlist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=ginlist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	for(var i=0;i<tequilalist.length;i++){
+		if(tequilalist[i]!='['&& tequilalist[i]!=']'&&tequilalist[i]!=' '){
+			if(tequilalist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=tequilalist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	for(var i=0;i<brandylist.length;i++){
+		if(brandylist[i]!='['&& brandylist[i]!=']'&&brandylist[i]!=' '){
+			if(brandylist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=brandylist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	for(var i=0;i<rumlist.length;i++){
+		if(rumlist[i]!='['&& rumlist[i]!=']'&&rumlist[i]!=' '){
+			if(rumlist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=rumlist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	for(var i=0;i<winelist.length;i++){
+		if(winelist[i]!='['&& winelist[i]!=']'&&winelist[i]!=' '){
+			if(winelist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=winelist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	for(var i=0;i<beerlist.length;i++){
+		if(beerlist[i]!='['&& beerlist[i]!=']'&&beerlist[i]!=' '){
+			if(beerlist[i]==','){
+				mycart.push(src);
+				src="";
+			}
+			else{
+				src+=beerlist[i];
+			}
+		}
+	}
+	mycart.push(src);
+	src="";
+	mycart[0]=mycart[0].substr(9,mycart[0].length-9);
+	console.log(mycart);
+	
+	function makemycart(){
+		for(var i=0;i<mycart.length;i+=4){
+			for(var j=0;j<drinklist.length;j++){
+				if(drinklist[j]==mycart[i]){
+					const table = document.getElementById('mycart');					  
+					  // 새 행(Row) 추가
+					  const newRow = table.insertRow();
+					  var img=document.createElement('img');
+					  img.src=mycart[i];
+					  
+					  // 새 행(Row)에 Cell 추가									  
+					  const newCell1 = newRow.insertCell(0);
+					  const newCell2 = newRow.insertCell(1);
+					  const newCell3 = newRow.insertCell(2);
+					  const newCell4 = newRow.insertCell(3);					  
+					  
+					  // Cell에 텍스트 추가	
+					  newCell1.appendChild(img);
+					  newCell2.innerText = mycart[i+3];
+					  newCell3.innerText = mycart[i+2];
+					  newCell4.innerText = mycart[i+1];
+					  
+				}
+			}
+		}
+	}
+	
+
+</script>
 </body>
 </html>
