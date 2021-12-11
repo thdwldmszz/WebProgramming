@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/master2.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="js\script.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <div class="top-menu">
+        <p><b>SKKU WHISKY AND MORE</b></p>
+        <p style="margin-left:-8.5vw;">for sellers</p>
+        <a id="homeM" type="button" name="button" href="seller.html">HOME</a>
+        <a id="addProduct" type="button" name="button" href="addItem.html">ADD PRODUCT</a>
+        <a id="customerList" type="button" name="button" href="customerList.jsp">CUSTOMER LIST</a>
+        <a id="logoutM" type="button" name="button" href="mainPage.jsp">Log out</a>
+      </div>
+        <form class="itemContainer" action="addItem.jsp" method="post">
+          <div class="imageBox">
+              <div class="preview">
+                <img id="imagePreview">
+              </div>
+              <label for="productImage" id="labelImage"><p id="imageIcon"><i class="fas fa-images"></i></p>Click to upload Image</label>
+              <input type="file" id="productImage" name="productImage" accept="image/*" onchange="showPreview(event);">
+            </div>
+          <div class="textBox">
+            <input type="text" id="productName" name="productName" placeholder="Product Name">
+            <input type="text" id="productCategory" name="productCategory" placeholder="Product Category">
+            <input type="text" id="productType" name="productType" placeholder="Product Type" list="typeList">
+            <datalist id="typeList">
+		        <option value="beer"></option>
+		        <option value="brandy"></option>
+		        <option value="gin"></option>
+		        <option value="rum"></option>
+		        <option value="tequila"></option>
+		        <option value="whisky"></option>
+		        <option value="wine"></option>
+    		</datalist>
+            <input type="number" id="productPrice" name="productPrice" placeholder="Product Price">
+            <button type="submit" id="saveBtn">Save</button>
+          </div>
+        </form>
+      <div class="copyright">
+        <p>Copyright@2021 WoojinKim & JieunSong</p>
+      </div>
+      
+  </body>
+</html>
